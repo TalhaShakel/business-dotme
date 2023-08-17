@@ -11,7 +11,7 @@ class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15),
+      margin: const EdgeInsets.symmetric(horizontal: 15),
       height: 95,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

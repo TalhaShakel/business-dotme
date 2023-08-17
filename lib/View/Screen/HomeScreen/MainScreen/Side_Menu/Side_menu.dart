@@ -1,9 +1,6 @@
-import 'package:dot_me/View/Screen/HomeScreen/KalenderScreen.dart';
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainScreen.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/Side_Menu/compunents/DrawerIconButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 
 class Side_menu extends StatelessWidget {
   const Side_menu({
@@ -14,7 +11,7 @@ class Side_menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
     
-    Container(
+    SizedBox(
       height: double.infinity,
       child: Row(
         mainAxisSize: MainAxisSize.min,

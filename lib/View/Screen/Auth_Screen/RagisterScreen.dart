@@ -45,7 +45,7 @@ class _RagisterScreenState extends State<RagisterScreen> {
                           text: 'BUSINESS APP',
                           fontsize: 10,
                           fontweight: FontWeight.w900,
-                          fontcolor: Color(0xff1F71FF),
+                          fontcolor: const Color(0xff1F71FF),
                         ),
                       ],
                     ),
@@ -59,7 +59,7 @@ class _RagisterScreenState extends State<RagisterScreen> {
                             IconButton(
                                 padding: EdgeInsets.zero,
                                 color: const Color(0xff1F71FF),
-                                icon: Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back),
                                 onPressed: () {
                                   Get.back();
                                 }),
@@ -67,7 +67,7 @@ class _RagisterScreenState extends State<RagisterScreen> {
                               text: 'Zurück',
                               fontsize: 16,
                               fontweight: FontWeight.w800,
-                              fontcolor: Color(0xff1F71FF),
+                              fontcolor: const Color(0xff1F71FF),
                             )
                           ],
                         ),
@@ -93,33 +93,33 @@ class _RagisterScreenState extends State<RagisterScreen> {
                         ),
                         3.verticalSpace,
                         MyTextField(
-                          child: IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.visibility_outlined)),
                           hintText: 'Placeholder',
                           controller: passwordControllor,
                           prefixIcon: 'assets/lockicon.png',
                           labeltext: 'Passwort',
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.visibility_outlined)),
                         ),
                         3.verticalSpace,
                         MyTextField(
-                          child: IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.visibility_outlined)),
                           hintText: 'Placeholder',
                           controller: numberControllor,
                           prefixIcon: 'assets/lockicon.png',
                           labeltext: 'Passwort wiederholen',
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.visibility_outlined)),
                         ),
                         3.verticalSpace,
                         MyTextField(
-                          child: IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.arrow_drop_down)),
                           hintText: '0049 XXXXXXXXXX',
                           controller: nameControllor,
                           prefixIcon: 'assets/User.png',
                           labeltext: 'Deine Telefonnummer',
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.arrow_drop_down)),
                         ),
                         3.verticalSpace,
                         MyText(
@@ -133,7 +133,7 @@ class _RagisterScreenState extends State<RagisterScreen> {
                         MyButton(
                           buttontext: 'Weiter',
                           onPressed: () {
-                            Get.to(() => RagisterScreen2());
+                            Get.to(() => const RagisterScreen2());
                           },
                           width: MediaQuery.of(context).size.width / 3,
                           radius: 8,

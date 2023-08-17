@@ -26,7 +26,7 @@ class TermineAndKalender extends StatelessWidget {
           ),
           25.verticalSpace,
           Container(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             width: double.infinity,
             height: 155,
             decoration: BoxDecoration(
@@ -73,9 +73,9 @@ class TermineAndKalender extends StatelessWidget {
                     Container(
                       height: 40,
                       width: 400,
-                      padding: EdgeInsets.only(left: 12),
+                      padding: const EdgeInsets.only(left: 12),
                       decoration: BoxDecoration(
-                          color: Color(0xff381E83),
+                          color: const Color(0xff381E83),
                           borderRadius: BorderRadius.circular(5)),
                       child: Row(
                         children: [
@@ -110,7 +110,7 @@ class TermineAndKalender extends StatelessWidget {
             ),
           ),
       //const Spacer(),
-          Divider(
+          const Divider(
           thickness: 1,
           color: Color(0xffF3F3F3),
         ),

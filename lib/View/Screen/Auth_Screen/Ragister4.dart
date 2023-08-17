@@ -1,8 +1,6 @@
 import 'package:dot_me/View/Screen/Auth_Screen/Ragister5.dart';
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainScreen.dart';
 import 'package:dot_me/View/Utils/Widgets/MyButton.dart';
 import 'package:dot_me/View/Utils/Widgets/MyText.dart';
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -42,7 +40,7 @@ class _RagisterScreen4State extends State<RagisterScreen4> {
                           text: 'BUSINESS APP',
                           fontsize: 10,
                           fontweight: FontWeight.w900,
-                          fontcolor: Color(0xff1F71FF),
+                          fontcolor: const Color(0xff1F71FF),
                         ),
                       ],
                     ),
@@ -56,7 +54,7 @@ class _RagisterScreen4State extends State<RagisterScreen4> {
                             IconButton(
                                 padding: EdgeInsets.zero,
                                 color: const Color(0xff1F71FF),
-                                icon: Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back),
                                 onPressed: () {
                                   Get.back();
                                 }),
@@ -64,7 +62,7 @@ class _RagisterScreen4State extends State<RagisterScreen4> {
                               text: 'Zurück',
                               fontsize: 16,
                               fontweight: FontWeight.w800,
-                              fontcolor: Color(0xff1F71FF),
+                              fontcolor: const Color(0xff1F71FF),
                             )
                           ],
                         ),
@@ -104,7 +102,7 @@ class _RagisterScreen4State extends State<RagisterScreen4> {
                         MyButton(
                           buttontext: 'Registrierung abschließen',
                           onPressed: () {
-                            Get.to(() => RagisterScreen5());
+                            Get.to(() => const RagisterScreen5());
                           },
                           width: MediaQuery.of(context).size.width / 3,
                           radius: 8,

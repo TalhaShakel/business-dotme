@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             text: 'BUSINESS APP',
                             fontsize: 10,
                             fontweight: FontWeight.w900,
-                            fontcolor: Color(0xff1F71FF),
+                            fontcolor: const Color(0xff1F71FF),
                           ),
                         ],
                       ),
@@ -63,15 +63,16 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           MyTextField(
                             // child: Image.asset('assets/profileperson.png'),
-                            child: IconButton(
-                              icon: Icon(Icons.arrow_downward),
-                              onPressed: () {},
-                            ),
                             prefixIcon: 'assets/profileperson.png',
 
                             hintText: 'Placeholder',
                             controller: nameControllor,
                             labeltext: 'Profile',
+                            // child: Image.asset('assets/profileperson.png'),
+                            child: IconButton(
+                              icon: const Icon(Icons.arrow_downward),
+                              onPressed: () {},
+                            ),
                           ),
                           5.verticalSpace,
                           MyTextField(
@@ -82,13 +83,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           5.verticalSpace,
                           MyTextField(
-                            child: IconButton(
-                                onPressed: () {},
-                                icon: Icon(Icons.visibility_outlined)),
                             prefixIcon: 'assets/lockicon.png',
                             hintText: 'Placeholder',
                             controller: passwordControllor,
                             labeltext: 'Passwort',
+                            child: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.visibility_outlined)),
                           ),
                           7.verticalSpace,
                           MyText(

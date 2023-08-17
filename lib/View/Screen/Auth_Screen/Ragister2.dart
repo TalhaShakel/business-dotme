@@ -5,7 +5,6 @@ import 'package:dot_me/View/Utils/Widgets/MyTextField.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class RagisterScreen2 extends StatefulWidget {
   const RagisterScreen2({super.key});
@@ -47,7 +46,7 @@ class _RagisterScreen2State extends State<RagisterScreen2> {
                           text: 'BUSINESS APP',
                           fontsize: 10,
                           fontweight: FontWeight.w900,
-                          fontcolor: Color(0xff1F71FF),
+                          fontcolor: const Color(0xff1F71FF),
                         ),
                       ],
                     ),
@@ -61,7 +60,7 @@ class _RagisterScreen2State extends State<RagisterScreen2> {
                             IconButton(
                                 padding: EdgeInsets.zero,
                                 color: const Color(0xff1F71FF),
-                                icon: Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back),
                                 onPressed: () {
                                   Get.back();
                                 }),
@@ -69,7 +68,7 @@ class _RagisterScreen2State extends State<RagisterScreen2> {
                               text: 'Zurück',
                               fontsize: 16,
                               fontweight: FontWeight.w800,
-                              fontcolor: Color(0xff1F71FF),
+                              fontcolor: const Color(0xff1F71FF),
                             )
                           ],
                         ),

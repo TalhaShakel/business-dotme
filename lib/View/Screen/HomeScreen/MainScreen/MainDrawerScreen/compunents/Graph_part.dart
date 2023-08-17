@@ -2,7 +2,6 @@ import 'package:dot_me/View/Utils/Widgets/MyText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 
 class GraphSecion extends StatelessWidget {
@@ -32,7 +31,7 @@ class GraphSecion extends StatelessWidget {
               height: 64,
               width: 103,
               decoration: BoxDecoration(
-                  color: Color(0xffF3F3F3),
+                  color: const Color(0xffF3F3F3),
                   borderRadius: BorderRadius.circular(10)),
               child: Center(
                 child: Column(
@@ -64,7 +63,7 @@ class GraphSecion extends StatelessWidget {
       height: 260,
       width: 570,
       decoration: BoxDecoration(
-        color: Color(0xffF3F3F3),
+        color: const Color(0xffF3F3F3),
         borderRadius: BorderRadius.circular(10)
       ),
       child: LineChart(
@@ -74,7 +73,7 @@ class GraphSecion extends StatelessWidget {
         maxX: 10,
         minY: 0,
         maxY: 10,
-        backgroundColor: Color(0xffF3F3F3),
+        backgroundColor: const Color(0xffF3F3F3),
     
       borderData: FlBorderData(
         border:Border.all(color: Colors.transparent) 
@@ -111,7 +110,7 @@ class GraphSecion extends StatelessWidget {
                 ],
               ),
             ),
-            dotData: FlDotData(show: false ),
+            dotData: const FlDotData(show: false ),
           ),
         ],
         gridData: FlGridData(
@@ -127,13 +126,13 @@ class GraphSecion extends StatelessWidget {
               );
             }),
         titlesData: FlTitlesData(
-          leftTitles: AxisTitles(
+          leftTitles: const AxisTitles(
             sideTitles: SideTitles(showTitles: true),
           ),
-          rightTitles: AxisTitles(
+          rightTitles: const AxisTitles(
             sideTitles: SideTitles(showTitles: false),
           ),
-          topTitles: AxisTitles(
+          topTitles: const AxisTitles(
             sideTitles: SideTitles(showTitles: false),
           ),
           bottomTitles: AxisTitles(
@@ -195,7 +194,7 @@ class GraphSecion extends StatelessWidget {
       height: 260,
       width: 570,
       decoration: BoxDecoration(
-        color: Color(0xffF3F3F3),
+        color: const Color(0xffF3F3F3),
         borderRadius: BorderRadius.circular(10)
       ),
       child: LineChart(
@@ -206,7 +205,7 @@ class GraphSecion extends StatelessWidget {
         maxX: 10,
         minY: 0,
         maxY: 10,
-        backgroundColor: Color(0xffF3F3F3),
+        backgroundColor: const Color(0xffF3F3F3),
     
       borderData: FlBorderData(
         
@@ -244,7 +243,7 @@ class GraphSecion extends StatelessWidget {
                 ],
               ),
             ),
-            dotData: FlDotData(show: false ),
+            dotData: const FlDotData(show: false ),
           ),
         ],
         gridData: FlGridData(

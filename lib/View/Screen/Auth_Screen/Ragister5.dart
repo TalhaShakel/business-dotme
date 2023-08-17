@@ -40,7 +40,7 @@ class _RagisterScreen5State extends State<RagisterScreen5> {
                           text: 'BUSINESS APP',
                           fontsize: 10,
                           fontweight: FontWeight.w900,
-                          fontcolor: Color(0xff1F71FF),
+                          fontcolor: const Color(0xff1F71FF),
                         ),
                       ],
                     ),
@@ -54,7 +54,7 @@ class _RagisterScreen5State extends State<RagisterScreen5> {
                             IconButton(
                                 padding: EdgeInsets.zero,
                                 color: const Color(0xff1F71FF),
-                                icon: Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back),
                                 onPressed: () {
                                   Get.back();
                                 }),
@@ -62,7 +62,7 @@ class _RagisterScreen5State extends State<RagisterScreen5> {
                               text: 'Zurück',
                               fontsize: 16,
                               fontweight: FontWeight.w800,
-                              fontcolor: Color(0xff1F71FF),
+                              fontcolor: const Color(0xff1F71FF),
                             )
                           ],
                         ),
@@ -78,7 +78,7 @@ class _RagisterScreen5State extends State<RagisterScreen5> {
                         MyButton(
                           buttontext: 'Fertig',
                           onPressed: () {
-                            Get.to(() => HomeScreen());
+                            Get.to(() => const HomeScreen());
                           },
                           width: MediaQuery.of(context).size.width / 3,
                           radius: 8,

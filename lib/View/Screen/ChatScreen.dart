@@ -1,5 +1,3 @@
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/Appbar.dart';
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/HeaderW.dart';
 import 'package:dot_me/View/Utils/Widgets/MyText.dart';
 import 'package:dot_me/View/Utils/Widgets/MyTextField.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +25,7 @@ class ChatScreen extends StatelessWidget {
           child: Row(
             
             children: [
-              Container(
+              SizedBox(
                 height: 800,
                 width: 380,
                 child: Column(
@@ -44,7 +42,7 @@ class ChatScreen extends StatelessWidget {
                       child: ListView.builder(
                           itemCount: 20,
                           itemBuilder: (context, index) {
-                            return Container(
+                            return SizedBox(
                               height: 70,
                               width: double.infinity,
                               child: Row(

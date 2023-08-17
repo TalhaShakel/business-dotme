@@ -4,7 +4,6 @@ import 'package:dot_me/View/Screen/HomeScreen/chatsScreen/web_chat_appbar.dart';
 import 'package:dot_me/View/Screen/HomeScreen/chatsScreen/web_profile_bar.dart';
 import 'package:dot_me/View/Screen/HomeScreen/chatsScreen/web_search_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class WebLayoutScreen extends StatelessWidget {
@@ -44,7 +43,7 @@ class WebLayoutScreen extends StatelessWidget {
               children: [
                 const ChatAppBar(),
                 const SizedBox(height: 20),
-                 Expanded(
+                 const Expanded(
                   child: ChatList(),
                 ),
                 Container(

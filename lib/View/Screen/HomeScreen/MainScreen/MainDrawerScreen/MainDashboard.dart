@@ -1,11 +1,7 @@
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/Appbar.dart';
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/Side_Menu/compunents/DrawerIconButton.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/Graph_part.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/HeaderW.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/TermineAndKalender.dart';
-import 'package:dot_me/View/Utils/Widgets/MyText.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainDashboard extends StatelessWidget {
   const MainDashboard({

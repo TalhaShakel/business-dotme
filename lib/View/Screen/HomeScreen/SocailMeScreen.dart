@@ -57,7 +57,7 @@ class SocailScreen extends StatelessWidget {
                         MyText(text: 'Beitragsname',fontsize: 25,fontweight: FontWeight.w900,fontcolor: Colors.black,),
                                               10.verticalSpace,
         
-                        CenterPart(),
+                        const CenterPart(),
                       ],
                     ),
         
@@ -77,7 +77,7 @@ class SocailScreen extends StatelessWidget {
                           10.verticalSpace,
                           MyText(text: 'Dein Feedback',fontsize: 25,fontweight: FontWeight.w900,fontcolor: Colors.black,),
                             
-                          LastPart(),
+                          const LastPart(),
                         ],
                       ),
                     ),
@@ -109,11 +109,11 @@ class Header extends StatelessWidget {
             fontweight: FontWeight.w900,
             fontcolor: Colors.black,
           ),
-          Spacer(),
+          const Spacer(),
           Container(
             height: 48,
             width: 230,
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
                 color: Colors.black, borderRadius: BorderRadius.circular(99)),
             child: Row(
@@ -160,9 +160,9 @@ class LastPart extends StatelessWidget {
               return Container(
                 padding:const  EdgeInsets.symmetric(horizontal: 16,vertical: 8),
                 height: 165,
-                margin: EdgeInsets.symmetric(vertical: 12),
+                margin: const EdgeInsets.symmetric(vertical: 12),
                 decoration: BoxDecoration(
-                    color: Color(0xffF3F3F3),
+                    color: const Color(0xffF3F3F3),
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,7 +176,7 @@ class LastPart extends StatelessWidget {
                         ),
                         3.horizontalSpace,
                         MyText(text: 'Lara Köster'),
-                        Spacer(),
+                        const Spacer(),
                         Row(
                           children: List.generate(5, (index) {
                             return const  Icon(

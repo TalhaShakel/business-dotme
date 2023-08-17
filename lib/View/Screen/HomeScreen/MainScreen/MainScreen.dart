@@ -6,12 +6,10 @@
 import 'package:dot_me/View/Screen/ChatScreen.dart';
 import 'package:dot_me/View/Screen/HomeScreen/KalenderScreen.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/MainDashboard.dart';
-import 'package:dot_me/View/Screen/HomeScreen/MainScreen/MainDrawerScreen/compunents/Appbar.dart';
 import 'package:dot_me/View/Screen/HomeScreen/MainScreen/Side_Menu/compunents/DrawerIconButton.dart';
 import 'package:dot_me/View/Screen/HomeScreen/SocailMeScreen.dart';
 import 'package:dot_me/View/Screen/HomeScreen/chatsScreen/web_layout.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // class MainScreen extends StatefulWidget {
@@ -199,11 +197,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _screens = [
     // Content for Home tab
-   MainDashboard(),
+   const MainDashboard(),
     // Content for Feed tab
-    KalenderScreen(),
+    const KalenderScreen(),
     // Content for Favorites tab
-    SocailScreen(),
+    const SocailScreen(),
     // Content for Settings tab
   const  ChatScreen(),
   const WebLayoutScreen()
@@ -282,12 +280,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     image: DecorationImage(
                         image: AssetImage('assets/logoball.png'),
                         fit: BoxFit.fill)),
-              ), label: Text('ball')),
+              ), label: const Text('ball')),
               
               NavigationRailDestination(
                icon:  DrawerIconButton(
                 image: 'assets/dotedicon.png',
-              ), label: Text('Home')
+              ), label: const Text('Home')
                   ),
               NavigationRailDestination(
                    icon:  DrawerIconButton(
@@ -296,16 +294,16 @@ class _HomeScreenState extends State<HomeScreen> {
               NavigationRailDestination(
                   icon:  DrawerIconButton(
                 image: 'assets/personicon.png',
-              ), label: Text('Favorites')),
+              ), label: const Text('Favorites')),
               NavigationRailDestination(
                   icon:  DrawerIconButton(
                 image: 'assets/massegebox.png',
-              ), label: Text('Settings')),
+              ), label: const Text('Settings')),
                NavigationRailDestination(
                   icon:  DrawerIconButton(
                 image: 'assets/notesicon.png',
-              ), label: Text('Settings')), NavigationRailDestination(
-                label: Text('home'),
+              ), label: const Text('Settings')), NavigationRailDestination(
+                label: const Text('home'),
                   icon:  DrawerIconButton(
                 image: 'assets/meicon.png',
               ),),

@@ -35,7 +35,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 width: double.infinity,
                 height: 90,
                 color: Colors.white,
@@ -74,7 +74,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.arrow_drop_down),
+                            icon: const Icon(Icons.arrow_drop_down),
                             color: Colors.white,
                           )
                         ],
@@ -106,7 +106,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.add),
                             color: Colors.white,
                           )
                         ],
@@ -139,7 +139,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                                   borderRadius: BorderRadius.circular(22.0),
                                 ),
                                 formatButtonTextStyle:
-                                    TextStyle(color: Colors.white),
+                                    const TextStyle(color: Colors.white),
                                 // formatButtonShowsNext: false,
                               ),
                               focusedDay: DateTime.now(),
@@ -175,7 +175,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                               )),
                         ),
                         15.verticalSpace,
-                        Container(
+                        SizedBox(
                           height: 200,
                           width: 360,
                           child: Column(
@@ -209,11 +209,11 @@ class _KalenderScreenState extends State<KalenderScreen> {
                               ),
                               10.verticalSpace,
                               ListTile(
-                                contentPadding: EdgeInsets.all(0),
+                                contentPadding: const EdgeInsets.all(0),
                                 leading: CircleAvatar(
                                     radius: 25.r,
                                     child: Image.asset("assets/p1.png")),
-                                title: Text('Company 1 Allgemeines'),
+                                title: const Text('Company 1 Allgemeines'),
                                 trailing: Checkbox(
                                   checkColor: Colors.black,
                                   activeColor: Colors.white,
@@ -228,7 +228,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                             ],
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           height: 200,
                           width: 360,
                           child: Column(
@@ -262,11 +262,11 @@ class _KalenderScreenState extends State<KalenderScreen> {
                               ),
                               10.verticalSpace,
                               ListTile(
-                                contentPadding: EdgeInsets.all(0),
+                                contentPadding: const EdgeInsets.all(0),
                                 leading: CircleAvatar(
                                     radius: 25.r,
                                     child: Image.asset("assets/p1.png")),
-                                title: Text('Person 1'),
+                                title: const Text('Person 1'),
                                 trailing: Checkbox(
                                   checkColor: Colors.black,
                                   activeColor: Colors.white,
@@ -289,7 +289,7 @@ class _KalenderScreenState extends State<KalenderScreen> {
                     width: 100,
                     height: 345.h,
                     decoration: BoxDecoration(
-                        color: Color(0xffF3F3F3),
+                        color: const Color(0xffF3F3F3),
                         borderRadius: BorderRadius.circular(15.r)),
                   ),
                 ],
